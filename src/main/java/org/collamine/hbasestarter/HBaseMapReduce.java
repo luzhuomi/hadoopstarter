@@ -65,3 +65,9 @@ public class HBaseMapReduce {
     }
 
 }
+
+
+/* exec
+mvn package
+hadoop jar target/hadoopstarter-0.1.jar org.collamine.hbasestarter.HBaseMapReduce "bars" "bars2" --hdfs
+*/

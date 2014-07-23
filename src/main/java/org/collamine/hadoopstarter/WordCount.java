@@ -63,13 +63,8 @@ public class WordCount extends Configured implements Tool {
 
 
 /*
-== compilation ==
-
-javac -classpath  /opt/hadoop-1.2.1/hadoop-core-1.2.1.jar WordCount.java -d bin 
-jar -cvf wordcountnapi.jar -C bin/ .
-
-== execution ==
+mvn package
 hadoop dfs -rmr output
-/opt/hadoop-1.2.1/bin/hadoop jar /Users/luzm/code/hadoop/WordCount/wordcountnapi.jar org.collamine.hadoopstarter.WordCount input/ output/
+/opt/hadoop-1.2.1/bin/hadoop jar target/hadoopstarter-0.1.jar org.collamine.hadoopstarter.WordCount input/ output/ 
 
  */
